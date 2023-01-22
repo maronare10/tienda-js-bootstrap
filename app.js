@@ -22,6 +22,10 @@ async function renderCategories() {
       fetchProductsByCategory(event.target.textContent)
     })
 
+    button.addEventListener('click', toggle => {
+      button.classList.toggle("red")
+    })
+
   })
 }
 renderCategories()
